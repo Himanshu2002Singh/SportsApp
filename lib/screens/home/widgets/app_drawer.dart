@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../models/user_profile_model.dart';
 import '../../../widgets/cricket_art_widgets.dart';
+import '../../match/start_match_screen.dart';
 import '../../profile/profile_screen.dart';
 import '../../store/store_screen.dart';
 import '../../tournament/add_tournament_screen.dart';
@@ -199,7 +200,13 @@ class AppDrawer extends StatelessWidget {
               icon: Icons.radio_button_checked_rounded,
               title: 'Start A Match',
               trailingBadge: const _FreeBadge(),
-              onTap: () => Navigator.pop(context),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const StartMatchScreen()),
+                );
+              },
             ),
 
             // 4. Go Live

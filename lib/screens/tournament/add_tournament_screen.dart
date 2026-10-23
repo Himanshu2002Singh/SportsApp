@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../models/user_profile_model.dart';
 import '../auth/widgets/auth_common_widgets.dart';
+import 'tournament_team_details_screen.dart';
 
 /// Page 15, 16, 17 & Images 1, 2, 3: Add a Tournament / Series Screen
 class AddTournamentScreen extends StatefulWidget {
@@ -83,10 +84,11 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
   }
 
   void _onSubmit() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Tournament details saved! Proceeding to next step...'),
-        backgroundColor: AppColors.primaryTeal,
+    final name = _nameController.text.trim().isEmpty ? 'Tournament' : _nameController.text.trim();
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => TournamentTeamDetailsScreen(tournamentName: name),
       ),
     );
   }

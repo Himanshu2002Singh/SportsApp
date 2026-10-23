@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_assets.dart';
 import '../../../core/constants/app_colors.dart';
+import '../home/home_dashboard_screen.dart';
 import 'mobile_number_screen.dart';
 
 /// Page 1: Welcome & Login Method Selection Screen
@@ -198,9 +199,9 @@ class LoginMethodScreen extends StatelessWidget {
                   // Explore as a guest link
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (_) => const MobileNumberScreen()),
+                        MaterialPageRoute(builder: (_) => const HomeDashboardScreen()),
                       );
                     },
                     child: const Text(
