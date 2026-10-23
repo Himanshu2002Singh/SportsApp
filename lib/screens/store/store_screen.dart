@@ -20,7 +20,7 @@ class StoreScreen extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
         ),
         title: const Text(
-          'CricHeroes Store',
+          'Sports App Store',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w700,

@@ -217,7 +217,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
             ),
             const SizedBox(height: 6),
             const Text(
-              '*We will use this information to post a looking request on CricHeroes.',
+              '*We will use this information to post a looking request on Sports App.',
               style: TextStyle(fontSize: 11, color: Color(0xFF6B7280), fontStyle: FontStyle.italic),
             ),
 

@@ -12,17 +12,17 @@ void main() {
       statusBarIconBrightness: Brightness.dark,
     ),
   );
-  runApp(const CricHeroesApp());
+  runApp(const SportsApp());
 }
 
-/// CricHeroes Flutter Application Root
-class CricHeroesApp extends StatelessWidget {
-  const CricHeroesApp({super.key});
+/// Sports App Flutter Application Root
+class SportsApp extends StatelessWidget {
+  const SportsApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CricHeroes',
+      title: 'Sports App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -47,3 +47,6 @@ class CricHeroesApp extends StatelessWidget {
     );
   }
 }
+
+/// Backwards compatibility alias
+typedef CricHeroesApp = SportsApp;

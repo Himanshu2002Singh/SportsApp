@@ -65,7 +65,7 @@ class ProClubView extends StatelessWidget {
               border: Border.all(color: AppColors.divider),
             ),
             child: const Text(
-              'A club designed especially for CricHeroes PRO members.\n\n'
+              'A club designed especially for Sports App PRO members.\n\n'
               'Share your opinions, insights and achievements around cricket and ask questions to fellow cricket lovers. '
               'Discuss at length and don\'t be afraid to be wrong.',
               textAlign: TextAlign.center,
@@ -86,7 +86,7 @@ class ProClubView extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Welcome to CricHeroes PRO Club!')),
+                  const SnackBar(content: Text('Welcome to Sports App PRO Club!')),
                 );
               },
               style: ElevatedButton.styleFrom(

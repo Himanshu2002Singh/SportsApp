@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../../../core/constants/app_assets.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_typography.dart';
 import '../../../../core/utils/url_helper.dart';
+import '../../../../widgets/sports_app_logo.dart';
 
 /// Top Navigation Bar matching CricHeroes Header
 class AppBarHeader extends StatelessWidget implements PreferredSizeWidget {
@@ -36,16 +36,7 @@ class AppBarHeader extends StatelessWidget implements PreferredSizeWidget {
             InkWell(
               onTap: () => UrlHelper.launch(AppStrings.websiteUrl, context: context),
               hoverColor: Colors.transparent,
-              child: Image.asset(
-                AppAssets.logo,
-                height: 38,
-                fit: BoxFit.contain,
-                errorBuilder: (context, error, stackTrace) => Image.network(
-                  AppAssets.remoteLogo,
-                  height: 38,
-                  fit: BoxFit.contain,
-                ),
-              ),
+              child: const SportsAppLogo(height: 34),
             ),
 
             // Desktop Navigation links

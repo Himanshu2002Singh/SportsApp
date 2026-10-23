@@ -271,7 +271,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
             const Padding(
               padding: EdgeInsets.only(top: 4.0),
               child: Text(
-                '*Get updated with CricHeroes offers and help videos on mail.',
+                '*Get updated with Sports App offers and help videos on mail.',
                 style: TextStyle(fontSize: 12, color: AppColors.textMedium),
               ),
             ),

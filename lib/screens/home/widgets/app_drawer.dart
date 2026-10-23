@@ -236,10 +236,10 @@ class AppDrawer extends StatelessWidget {
               onTap: () => Navigator.pop(context),
             ),
 
-            // 7. CricHeroes Store (with yellow jersey #7 icon)
+            // 7. Sports App Store (with yellow jersey #7 icon)
             _DrawerItem(
               icon: Icons.shopping_bag_outlined,
-              title: 'CricHeroes Store',
+              title: 'Sports App Store',
               trailingBadge: const Text(
                 '👕 7',
                 style: TextStyle(
@@ -263,10 +263,10 @@ class AppDrawer extends StatelessWidget {
               onTap: () => Navigator.pop(context),
             ),
 
-            // 9. CricHeroes Awards
+            // 9. Sports App Awards
             _DrawerItem(
               icon: Icons.military_tech_outlined,
-              title: 'CricHeroes Awards',
+              title: 'Sports App Awards',
               onTap: () => Navigator.pop(context),
             ),
 

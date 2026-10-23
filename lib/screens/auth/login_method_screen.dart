@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/app_assets.dart';
 import '../../../core/constants/app_colors.dart';
 import '../home/home_dashboard_screen.dart';
 import 'mobile_number_screen.dart';
+import '../../widgets/sports_app_logo.dart';
 
 /// Page 1: Welcome & Login Method Selection Screen
 class LoginMethodScreen extends StatelessWidget {
@@ -48,16 +48,10 @@ class LoginMethodScreen extends StatelessWidget {
                 children: [
                   const Spacer(flex: 2),
 
-                  // Official CricHeroes 10 Years Logo
-                  Image.asset(
-                    AppAssets.logo,
-                    height: 110,
-                    fit: BoxFit.contain,
-                    errorBuilder: (context, error, stackTrace) => Image.network(
-                      AppAssets.remoteLogo,
-                      height: 110,
-                      fit: BoxFit.contain,
-                    ),
+                  // Official Sports App Branding Logo
+                  const SportsAppLogo(
+                    height: 96,
+                    isVertical: true,
                   ),
 
                   const Spacer(flex: 3),

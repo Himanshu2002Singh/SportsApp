@@ -32,7 +32,7 @@ class _AchievementCardState extends State<AchievementCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // CricHeroes Watermark at top right
+          // Sports App Watermark at top right
           Padding(
             padding: const EdgeInsets.only(top: 10, right: 14),
             child: Row(
@@ -46,19 +46,16 @@ class _AchievementCardState extends State<AchievementCard> {
                     shape: BoxShape.circle,
                   ),
                   child: const Center(
-                    child: Text(
-                      '10',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 9,
-                        fontWeight: FontWeight.w900,
-                      ),
+                    child: Icon(
+                      Icons.sports_cricket,
+                      color: Colors.white,
+                      size: 11,
                     ),
                   ),
                 ),
                 const SizedBox(width: 4),
                 const Text(
-                  'cricheroes™',
+                  'Sports App™',
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,

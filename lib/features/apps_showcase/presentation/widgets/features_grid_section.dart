@@ -32,7 +32,7 @@ class FeaturesGridSection extends StatelessWidget {
             children: [
               // Section Header
               Text(
-                'The CricHeroes Cricket Suite',
+                'The Sports App Cricket Suite',
                 textAlign: TextAlign.center,
                 style: isDesktop
                     ? AppTypography.sectionTitle

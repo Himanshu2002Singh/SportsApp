@@ -2,9 +2,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:sports_app/main.dart';
 
 void main() {
-  testWidgets('CricHeroes App loads LoginMethodScreen with login options',
+  testWidgets('Sports App loads LoginMethodScreen with login options',
       (WidgetTester tester) async {
-    await tester.pumpWidget(const CricHeroesApp());
+    await tester.pumpWidget(const SportsApp());
     await tester.pump(const Duration(milliseconds: 200));
 
     // Verify Page 1 elements

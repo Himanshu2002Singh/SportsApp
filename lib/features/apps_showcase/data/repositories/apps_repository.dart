@@ -38,12 +38,12 @@ class AppsRepository {
     ];
   }
 
-  /// CricHeroes Product Suite
+  /// Sports App Product Suite
   List<AppItemModel> getEcosystemApps() {
     return [
       const AppItemModel(
         id: 'cricheroes_flagship',
-        name: 'CricHeroes Cricket App',
+        name: 'Sports App Cricket App',
         tagline: 'Your Complete Cricket Ecosystem',
         description:
             'Score local cricket matches ball-by-ball, generate international-standard digital scorecards, broadcast live scores, and track your career statistics.',
@@ -58,13 +58,13 @@ class AppsRepository {
           'Player profile, career wagon wheel & pitch map',
           'Leaderboards, MVP rankings & match certificates',
         ],
-        ctaText: 'Download CricHeroes',
+        ctaText: 'Download Sports App',
         androidUrl: AppStrings.playStoreUrl,
         iosUrl: AppStrings.appStoreUrl,
       ),
       const AppItemModel(
         id: 'cricpay',
-        name: 'CricPay (CricHeroes Pay)',
+        name: 'Sports Pay',
         tagline: 'Seamless Match Fees & Tournament Payments',
         description:
             'Effortlessly collect entry fees for tournaments, split ground and match expenses among team members, and get transparent payout reports.',
@@ -79,13 +79,13 @@ class AppsRepository {
           'Instant UPI, card, and net-banking payouts',
           'Audited financial statement for team captains',
         ],
-        ctaText: 'Explore CricPay',
+        ctaText: 'Explore Sports Pay',
         androidUrl: AppStrings.playStoreUrl,
         iosUrl: AppStrings.appStoreUrl,
       ),
       const AppItemModel(
         id: 'tournament_hub',
-        name: 'CricHeroes Tournament Hub',
+        name: 'Sports App Tournament Hub',
         tagline: 'Professional Cricket Tournament Management',
         description:
             'Automate schedule creation, team registrations, points table generation with NRR calculation, and sponsor banner management.',

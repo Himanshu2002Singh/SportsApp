@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../../core/constants/app_assets.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_typography.dart';
@@ -7,6 +6,7 @@ import '../../../../core/utils/responsive_layout.dart';
 import '../../../../core/utils/url_helper.dart';
 import '../controllers/apps_page_controller.dart';
 import 'store_badge_button.dart';
+import '../../../../widgets/sports_app_logo.dart';
 
 /// The exact left-side Details Section from cricheroes.com/apps
 class HeroDetailsSection extends StatelessWidget {
@@ -31,19 +31,12 @@ class HeroDetailsSection extends StatelessWidget {
             isDesktop ? CrossAxisAlignment.start : CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // CricHeroes Logo (Width 350px on desktop)
+          // Sports App Logo
           InkWell(
             onTap: () => UrlHelper.launch(AppStrings.websiteUrl, context: context),
             hoverColor: Colors.transparent,
-            child: Image.asset(
-              AppAssets.logo,
-              width: isDesktop ? 320 : 220,
-              fit: BoxFit.contain,
-              errorBuilder: (context, error, stackTrace) => Image.network(
-                AppAssets.remoteLogo,
-                width: isDesktop ? 320 : 220,
-                fit: BoxFit.contain,
-              ),
+            child: SportsAppLogo(
+              height: isDesktop ? 60 : 44,
             ),
           ),
 

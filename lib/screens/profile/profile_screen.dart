@@ -361,7 +361,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                     const SizedBox(height: 10),
                     const Text(
-                      'Access unlimited CricInsights and additional benefits with PRO membership.',
+                      'Access unlimited Sports Insights and additional benefits with PRO membership.',
                       style: TextStyle(fontSize: 13, color: Colors.white, height: 1.3),
                     ),
                     const SizedBox(height: 16),

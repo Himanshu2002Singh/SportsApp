@@ -237,7 +237,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
           children: [
             // Notice text matching Screenshot 1 & 4
             const Text(
-              '*Scoring a match on CricHeroes is free.',
+              '*Scoring a match on Sports App is free.',
               style: TextStyle(
                 fontSize: 13,
                 fontStyle: FontStyle.italic,

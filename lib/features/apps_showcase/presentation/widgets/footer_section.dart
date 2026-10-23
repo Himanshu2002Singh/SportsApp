@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../../../../core/constants/app_assets.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/utils/responsive_layout.dart';
 import '../../../../core/utils/url_helper.dart';
+import '../../../../widgets/sports_app_logo.dart';
 
 /// Clean, professional footer matching CricHeroes website
 class FooterSection extends StatelessWidget {
@@ -30,22 +30,10 @@ class FooterSection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Logo with brightness filter for dark background
-                  ColorFiltered(
-                    colorFilter: const ColorFilter.mode(
-                      Colors.white,
-                      BlendMode.srcIn,
-                    ),
-                    child: Image.asset(
-                      AppAssets.logo,
-                      height: 32,
-                      fit: BoxFit.contain,
-                      errorBuilder: (context, error, stackTrace) => Image.network(
-                        AppAssets.remoteLogo,
-                        height: 32,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
+                  // Logo with bright text for dark background
+                  const SportsAppLogo(
+                    height: 28,
+                    isDarkBackground: true,
                   ),
 
                   // Social Media Icons

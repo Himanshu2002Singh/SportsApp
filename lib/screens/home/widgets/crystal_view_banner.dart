@@ -101,7 +101,7 @@ class CrystalViewBanner extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         const Text(
-                          'CricHeroes Ticker',
+                          'Sports App Ticker',
                           style: TextStyle(
                             fontSize: 10,
                             color: Colors.white70,

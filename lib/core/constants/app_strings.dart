@@ -1,9 +1,9 @@
-/// Official CricHeroes strings, store URLs, and copy text
+/// Official Sports App strings, store URLs, and copy text
 class AppStrings {
   AppStrings._();
 
-  static const String appName = 'CricHeroes';
-  static const String pageTitle = 'CricHeroes - The Ultimate Cricket Scoring App';
+  static const String appName = 'Sports App';
+  static const String pageTitle = 'Sports App - The Ultimate Cricket Scoring App';
   
   // Hero Section
   static const String heroTitle = 'Keep track of everything cricket!';
@@ -39,9 +39,10 @@ class AppStrings {
   static const String statRatingLabel = 'Highest Rated Cricket App';
 
   // Features
-  static const String featuresHeading = 'Why Millions of Cricketers Love CricHeroes';
+  static const String featuresHeading = 'Why Millions of Cricketers Love Sports App';
   static const String featuresSubheading = 'Designed for players, scorers, and tournament organizers to experience international match standards.';
   
   // Footer
-  static const String copyright = '© 2026 CricHeroes Pvt. Ltd. All rights reserved.';
+  static const String copyright = '© 2026 Sports App Pvt. Ltd. All rights reserved.';
 }
+

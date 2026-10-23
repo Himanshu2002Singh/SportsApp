@@ -42,11 +42,10 @@ class _HomeDashboardScreenState extends State<HomeDashboardScreen> {
         titleSpacing: 0,
         title: Row(
           children: [
-            // CricHeroes 10 Ball Logo + Brand Name
+            // Sports App Logo + Brand Name
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // "10" with cricket ball shape
                 Container(
                   width: 26,
                   height: 26,
@@ -54,26 +53,17 @@ class _HomeDashboardScreenState extends State<HomeDashboardScreen> {
                     color: Colors.white,
                     shape: BoxShape.circle,
                   ),
-                  child: Center(
-                    child: RichText(
-                      text: const TextSpan(
-                        children: [
-                          TextSpan(
-                            text: '10',
-                            style: TextStyle(
-                              color: Color(0xFFE5202C),
-                              fontSize: 12,
-                              fontWeight: FontWeight.w900,
-                            ),
-                          ),
-                        ],
-                      ),
+                  child: const Center(
+                    child: Icon(
+                      Icons.sports_cricket,
+                      color: Color(0xFFE5202C),
+                      size: 16,
                     ),
                   ),
                 ),
                 const SizedBox(width: 6),
                 const Text(
-                  'cricheroes',
+                  'Sports App',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
@@ -346,7 +336,7 @@ class _HomeDashboardScreenState extends State<HomeDashboardScreen> {
                     Icon(Icons.sports_cricket, color: Colors.white, size: 24),
                     SizedBox(width: 8),
                     Text(
-                      'cricheroes™',
+                      'Sports App™',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
