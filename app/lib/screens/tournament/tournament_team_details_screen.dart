@@ -91,7 +91,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
               'Because you need teams for your tournament',
               style: TextStyle(
                 fontSize: 13,
-                color: Color(0xFF6B7280),
+                color: AppColors.grey500,
               ),
             ),
 
@@ -200,7 +200,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
             const SizedBox(height: 10),
             Container(
               decoration: BoxDecoration(
-                border: Border.all(color: const Color(0xFFD1D5DB)),
+                border: Border.all(color: AppColors.grey300),
                 borderRadius: BorderRadius.circular(4),
               ),
               child: TextField(
@@ -209,7 +209,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
                 style: const TextStyle(fontSize: 14, color: AppColors.textDark),
                 decoration: const InputDecoration(
                   hintText: 'Add more details like prizes, trophies, entry fees, rules, etc.',
-                  hintStyle: TextStyle(fontSize: 13, color: Color(0xFF9CA3AF)),
+                  hintStyle: TextStyle(fontSize: 13, color: AppColors.grey400),
                   contentPadding: EdgeInsets.all(12),
                   border: InputBorder.none,
                 ),
@@ -218,7 +218,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
             const SizedBox(height: 6),
             const Text(
               '*We will use this information to post a looking request on Sports App.',
-              style: TextStyle(fontSize: 11, color: Color(0xFF6B7280), fontStyle: FontStyle.italic),
+              style: TextStyle(fontSize: 11, color: AppColors.grey500, fontStyle: FontStyle.italic),
             ),
 
             const SizedBox(height: 36),
@@ -236,7 +236,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
                   onTap: _onSkip,
                   child: Container(
                     height: double.infinity,
-                    color: const Color(0xFFF1F5F9), // Light grey
+                    color: AppColors.grey100, // Light grey
                     child: const Center(
                       child: Text(
                         'Skip',
@@ -255,7 +255,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
                   onTap: _onContinue,
                   child: Container(
                     height: double.infinity,
-                    color: const Color(0xFF00897B), // Teal
+                    color: AppColors.primaryTeal, // Teal
                     child: const Center(
                       child: Text(
                         'Continue',
@@ -294,10 +294,10 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
         decoration: BoxDecoration(
-          color: isSelected ? const Color(0xFFE2E8F0) : const Color(0xFFF1F5F9),
+          color: isSelected ? AppColors.grey200 : AppColors.grey100,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: isSelected ? const Color(0xFF94A3B8) : const Color(0xFFE2E8F0),
+            color: isSelected ? AppColors.grey400 : AppColors.grey200,
           ),
         ),
         child: Text(
@@ -324,7 +324,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
           label,
           style: const TextStyle(
             fontSize: 12,
-            color: Color(0xFF9CA3AF),
+            color: AppColors.grey400,
           ),
         ),
         TextField(
@@ -339,7 +339,7 @@ class _TournamentTeamDetailsScreenState extends State<TournamentTeamDetailsScree
             isDense: true,
             contentPadding: EdgeInsets.symmetric(vertical: 6),
             enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFFD1D5DB)),
+              borderSide: BorderSide(color: AppColors.grey300),
             ),
             focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: AppColors.primaryTeal, width: 2),

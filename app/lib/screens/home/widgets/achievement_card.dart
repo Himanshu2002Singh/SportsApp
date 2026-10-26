@@ -20,7 +20,7 @@ class _AchievementCardState extends State<AchievementCard> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFFE5E7EB)),
+        border: Border.all(color: AppColors.grey200),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.04),
@@ -42,7 +42,7 @@ class _AchievementCardState extends State<AchievementCard> {
                   width: 18,
                   height: 18,
                   decoration: const BoxDecoration(
-                    color: Color(0xFFE5202C),
+                    color: AppColors.headerRed,
                     shape: BoxShape.circle,
                   ),
                   child: const Center(
@@ -59,7 +59,7 @@ class _AchievementCardState extends State<AchievementCard> {
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF1F2937),
+                    color: AppColors.grey800,
                   ),
                 ),
               ],
@@ -79,9 +79,9 @@ class _AchievementCardState extends State<AchievementCard> {
                   child: Container(
                     height: 250,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF3F4F6),
+                      color: AppColors.grey100,
                       borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: const Color(0xFFE5E7EB)),
+                      border: Border.all(color: AppColors.grey200),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withValues(alpha: 0.08),
@@ -115,11 +115,11 @@ class _AchievementCardState extends State<AchievementCard> {
                     height: 250,
                     padding: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFE53935),
+                      color: AppColors.headerRed,
                       borderRadius: BorderRadius.circular(16),
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFFE53935).withValues(alpha: 0.25),
+                          color: AppColors.headerRed.withValues(alpha: 0.25),
                           blurRadius: 8,
                           offset: const Offset(0, 3),
                         ),
@@ -193,7 +193,7 @@ class _AchievementCardState extends State<AchievementCard> {
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 12),
             decoration: const BoxDecoration(
-              color: Color(0xFF00897B), // CricHeroes Teal
+              color: AppColors.primaryTealAccent, // CricHeroes Teal
             ),
             child: const Center(
               child: Text(
@@ -215,11 +215,11 @@ class _AchievementCardState extends State<AchievementCard> {
               children: const [
                 Text(
                   '20-10-2026 06:00 PM',
-                  style: TextStyle(fontSize: 12, color: Color(0xFF6B7280)),
+                  style: TextStyle(fontSize: 12, color: AppColors.grey500),
                 ),
                 Text(
                   '20 comments',
-                  style: TextStyle(fontSize: 12, color: Color(0xFF6B7280)),
+                  style: TextStyle(fontSize: 12, color: AppColors.grey500),
                 ),
               ],
             ),
@@ -233,7 +233,7 @@ class _AchievementCardState extends State<AchievementCard> {
                 Container(
                   padding: const EdgeInsets.all(2),
                   decoration: const BoxDecoration(
-                    color: Color(0xFFEF4444),
+                    color: AppColors.brandRed,
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(Icons.favorite, size: 10, color: Colors.white),
@@ -243,7 +243,7 @@ class _AchievementCardState extends State<AchievementCard> {
                   child: Container(
                     padding: const EdgeInsets.all(2),
                     decoration: const BoxDecoration(
-                      color: Color(0xFF0284C7),
+                      color: AppColors.jerseyRoyalBlue,
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(Icons.thumb_up, size: 10, color: Colors.white),
@@ -252,14 +252,14 @@ class _AchievementCardState extends State<AchievementCard> {
                 const SizedBox(width: 6),
                 Text(
                   '$_reactionCount reactions',
-                  style: const TextStyle(fontSize: 12, color: Color(0xFF4B5563)),
+                  style: const TextStyle(fontSize: 12, color: AppColors.grey600),
                 ),
               ],
             ),
           ),
 
           const SizedBox(height: 6),
-          const Divider(height: 1, color: Color(0xFFE5E7EB)),
+          const Divider(height: 1, color: AppColors.grey200),
 
           // Social Actions Row: React, Comment, Share (Image 4)
           Row(
@@ -275,13 +275,13 @@ class _AchievementCardState extends State<AchievementCard> {
                 icon: Icon(
                   _isLiked ? Icons.thumb_up : Icons.thumb_up_alt_outlined,
                   size: 18,
-                  color: _isLiked ? const Color(0xFF0284C7) : AppColors.textDark,
+                  color: _isLiked ? AppColors.jerseyRoyalBlue : AppColors.textDark,
                 ),
                 label: Text(
                   'React',
                   style: TextStyle(
                     fontSize: 13,
-                    color: _isLiked ? const Color(0xFF0284C7) : AppColors.textDark,
+                    color: _isLiked ? AppColors.jerseyRoyalBlue : AppColors.textDark,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -313,7 +313,7 @@ class _AchievementCardState extends State<AchievementCard> {
             ],
           ),
 
-          const Divider(height: 1, color: Color(0xFFE5E7EB)),
+          const Divider(height: 1, color: AppColors.grey200),
 
           // Quick Comment Chips (Image 4)
           Padding(
@@ -338,9 +338,9 @@ class _AchievementCardState extends State<AchievementCard> {
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: const Color(0xFFF9FAFB),
+                color: AppColors.grey50,
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: const Color(0xFFE5E7EB)),
+                border: Border.all(color: AppColors.grey200),
               ),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -350,7 +350,7 @@ class _AchievementCardState extends State<AchievementCard> {
                     width: 32,
                     height: 32,
                     decoration: const BoxDecoration(
-                      color: Color(0xFF1E3A8A),
+                      color: AppColors.jerseyDarkBlue,
                       shape: BoxShape.circle,
                     ),
                     child: const Center(
@@ -375,7 +375,7 @@ class _AchievementCardState extends State<AchievementCard> {
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFF111827),
+                            color: AppColors.grey900,
                           ),
                         ),
                         SizedBox(height: 2),
@@ -383,7 +383,7 @@ class _AchievementCardState extends State<AchievementCard> {
                           'Well bowled, Avni What a spell Bowling masterclass',
                           style: TextStyle(
                             fontSize: 12,
-                            color: Color(0xFF4B5563),
+                            color: AppColors.grey600,
                           ),
                         ),
                       ],
@@ -409,16 +409,16 @@ class _QuickChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: const Color(0xFFF3F4F6),
+        color: AppColors.grey100,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: const Color(0xFFE5E7EB)),
+        border: Border.all(color: AppColors.grey200),
       ),
       child: Text(
         label,
         style: const TextStyle(
           fontSize: 11,
           fontWeight: FontWeight.w500,
-          color: Color(0xFF374151),
+          color: AppColors.grey700,
         ),
       ),
     );
@@ -434,7 +434,7 @@ class _GirlCricketerWithMedalPainter extends CustomPainter {
     // Background gradient
     final bgPaint = Paint()
       ..shader = const LinearGradient(
-        colors: [Color(0xFFE2E8F0), Color(0xFFCBD5E1)],
+        colors: [AppColors.grey200, AppColors.grey300],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       ).createShader(Rect.fromLTWH(0, 0, w, h));
@@ -450,7 +450,7 @@ class _GirlCricketerWithMedalPainter extends CustomPainter {
     canvas.drawPath(shirtPath, shirtPaint);
 
     // Collar
-    final collarPaint = Paint()..color = const Color(0xFFF1F5F9);
+    final collarPaint = Paint()..color = AppColors.slateBg;
     final collarPath = Path();
     collarPath.moveTo(w * 0.38, h * 0.56);
     collarPath.lineTo(w * 0.5, h * 0.65);
@@ -461,7 +461,7 @@ class _GirlCricketerWithMedalPainter extends CustomPainter {
 
     // Blue Ribbon for Medal
     final ribbonPaint = Paint()
-      ..color = const Color(0xFF2563EB)
+      ..color = AppColors.jerseyRoyalBlue
       ..style = PaintingStyle.stroke
       ..strokeWidth = w * 0.04;
     final ribbonPath = Path();
@@ -470,30 +470,30 @@ class _GirlCricketerWithMedalPainter extends CustomPainter {
     canvas.drawPath(ribbonPath, ribbonPaint);
 
     // Golden Medal
-    final goldPaint = Paint()..color = const Color(0xFFEAB308);
+    final goldPaint = Paint()..color = AppColors.proGold;
     final medalCenter = Offset(w * 0.26, h * 0.72);
     canvas.drawCircle(medalCenter, w * 0.14, goldPaint);
 
     // Medal rim detail
     final goldRim = Paint()
-      ..color = const Color(0xFFCA8A04)
+      ..color = AppColors.amberBannerDark
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2.0;
     canvas.drawCircle(medalCenter, w * 0.12, goldRim);
 
     // Hand holding medal
-    final handPaint = Paint()..color = const Color(0xFFD97706).withValues(alpha: 0.7);
+    final handPaint = Paint()..color = AppColors.amberBannerDark.withValues(alpha: 0.7);
     canvas.drawCircle(Offset(w * 0.22, h * 0.78), w * 0.08, handPaint);
 
     // Girl Head & Face
-    final skinPaint = Paint()..color = const Color(0xFFDE9E74);
+    final skinPaint = Paint()..color = AppColors.khakhi50;
     canvas.drawOval(
       Rect.fromCenter(center: Offset(w * 0.5, h * 0.36), width: w * 0.44, height: h * 0.34),
       skinPaint,
     );
 
     // Black Hair & Headband
-    final hairPaint = Paint()..color = const Color(0xFF18181B);
+    final hairPaint = Paint()..color = AppColors.grey900;
     final hairPath = Path();
     hairPath.moveTo(w * 0.26, h * 0.45);
     hairPath.quadraticBezierTo(w * 0.25, h * 0.18, w * 0.5, h * 0.18);
@@ -504,7 +504,7 @@ class _GirlCricketerWithMedalPainter extends CustomPainter {
     canvas.drawPath(hairPath, hairPaint);
 
     // Smile & Eyes
-    final featurePaint = Paint()..color = const Color(0xFF18181B);
+    final featurePaint = Paint()..color = AppColors.grey900;
     canvas.drawCircle(Offset(w * 0.42, h * 0.34), 3, featurePaint);
     canvas.drawCircle(Offset(w * 0.58, h * 0.34), 3, featurePaint);
 

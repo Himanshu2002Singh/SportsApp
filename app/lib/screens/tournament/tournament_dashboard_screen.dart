@@ -81,7 +81,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                     width: 40,
                     height: 4,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFD1D5DB),
+                      color: AppColors.grey300,
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
@@ -104,7 +104,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                   'How many teams you are expecting for this tournament?',
                   style: TextStyle(
                     fontSize: 13,
-                    color: Color(0xFF6B7280),
+                    color: AppColors.grey500,
                   ),
                 ),
                 const SizedBox(height: 18),
@@ -118,7 +118,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                       style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xFF00897B),
+                        color: AppColors.primaryTealAccent,
                       ),
                     ),
                     TextField(
@@ -134,10 +134,10 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                         isDense: true,
                         contentPadding: EdgeInsets.symmetric(vertical: 8),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color(0xFF00897B), width: 2),
+                          borderSide: BorderSide(color: AppColors.primaryTealAccent, width: 2),
                         ),
                         focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color(0xFF00897B), width: 2),
+                          borderSide: BorderSide(color: AppColors.primaryTealAccent, width: 2),
                         ),
                       ),
                     ),
@@ -160,7 +160,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF00897B),
+                      backgroundColor: AppColors.primaryTealAccent,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4),
@@ -189,7 +189,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: const Color(0xFF9B1B1F), // Dark crimson red matching Screenshot 2
+        backgroundColor: AppColors.headerRed,
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
@@ -224,10 +224,10 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
             child: TabBar(
               controller: _tabController,
               isScrollable: true,
-              indicatorColor: const Color(0xFF9B1B1F),
+              indicatorColor: AppColors.headerRed,
               indicatorWeight: 2.5,
               labelColor: AppColors.textDark,
-              unselectedLabelColor: const Color(0xFF6B7280),
+              unselectedLabelColor: AppColors.grey500,
               labelStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
               unselectedLabelStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
               tabs: _tabs.map((tab) => Tab(text: tab)).toList(),
@@ -246,7 +246,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF00897B),
+        backgroundColor: AppColors.primaryTealAccent,
         onPressed: _showNumberOfTeamsModal,
         child: const Icon(Icons.add, color: Colors.white),
       ),
@@ -264,15 +264,15 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(4),
-            border: Border.all(color: const Color(0xFFE5E7EB)),
+            border: Border.all(color: AppColors.grey200),
           ),
           child: TextField(
             controller: _searchController,
             style: const TextStyle(fontSize: 14, color: AppColors.textDark),
             decoration: const InputDecoration(
               hintText: 'Quick search',
-              hintStyle: TextStyle(fontSize: 14, color: Color(0xFF9CA3AF)),
-              prefixIcon: Icon(Icons.search, color: Color(0xFF9CA3AF), size: 22),
+              hintStyle: TextStyle(fontSize: 14, color: AppColors.grey400),
+              prefixIcon: Icon(Icons.search, color: AppColors.grey400, size: 22),
               border: InputBorder.none,
               contentPadding: EdgeInsets.symmetric(vertical: 10),
             ),
@@ -290,14 +290,14 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                 width: 70,
                 height: 70,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF1F5F9),
+                  color: AppColors.slateBg,
                   shape: BoxShape.circle,
-                  border: Border.all(color: const Color(0xFFE2E8F0)),
+                  border: Border.all(color: AppColors.grey200),
                 ),
                 child: const Icon(
                   Icons.groups_outlined,
                   size: 36,
-                  color: Color(0xFF64748B),
+                  color: AppColors.grey500,
                 ),
               ),
               const SizedBox(height: 16),
@@ -317,7 +317,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 13,
-                    color: Color(0xFF6B7280),
+                    color: AppColors.grey500,
                     height: 1.35,
                   ),
                 ),
@@ -338,7 +338,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF00897B),
+                  backgroundColor: AppColors.primaryTealAccent,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 11),
                 ),
@@ -351,7 +351,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
                   style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
-                    color: Color(0xFF00897B),
+                    color: AppColors.primaryTealAccent,
                   ),
                 ),
               ),
@@ -373,7 +373,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
         const SizedBox(height: 8),
         const Text(
           'Tournament details and regulations.',
-          style: TextStyle(fontSize: 14, color: Color(0xFF6B7280)),
+          style: TextStyle(fontSize: 14, color: AppColors.grey500),
         ),
       ],
     );
@@ -383,7 +383,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
     return const Center(
       child: Text(
         'No matches scheduled yet.',
-        style: TextStyle(fontSize: 14, color: Color(0xFF6B7280)),
+        style: TextStyle(fontSize: 14, color: AppColors.grey500),
       ),
     );
   }
@@ -392,7 +392,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
     return const Center(
       child: Text(
         'Points table will be available once matches start.',
-        style: TextStyle(fontSize: 14, color: Color(0xFF6B7280)),
+        style: TextStyle(fontSize: 14, color: AppColors.grey500),
       ),
     );
   }
@@ -401,7 +401,7 @@ class _TournamentDashboardScreenState extends State<TournamentDashboardScreen>
     return const Center(
       child: Text(
         'No sponsors added yet.',
-        style: TextStyle(fontSize: 14, color: Color(0xFF6B7280)),
+        style: TextStyle(fontSize: 14, color: AppColors.grey500),
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../core/constants/app_colors.dart';
 
 /// Crystal View Promotional Banner (Screenshot 3)
 class CrystalViewBanner extends StatelessWidget {
@@ -10,14 +11,14 @@ class CrystalViewBanner extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Color(0xFFB71C1C), Color(0xFFE5202C)],
+          colors: [AppColors.brandRedDark, AppColors.headerRed],
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
         ),
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFFE5202C).withValues(alpha: 0.25),
+            color: AppColors.headerRed.withValues(alpha: 0.25),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -128,7 +129,7 @@ class CrystalViewBanner extends StatelessWidget {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                                 decoration: BoxDecoration(
-                                  color: const Color(0xFFE5202C),
+                                  color: AppColors.headerRed,
                                   borderRadius: BorderRadius.circular(2),
                                 ),
                                 child: const Text(
@@ -146,7 +147,7 @@ class CrystalViewBanner extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w800,
-                                  color: Color(0xFF111827),
+                                  color: AppColors.grey900,
                                 ),
                               ),
                             ],

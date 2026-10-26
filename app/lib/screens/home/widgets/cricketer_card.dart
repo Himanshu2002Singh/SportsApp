@@ -54,8 +54,8 @@ class CricketerCardSection extends StatelessWidget {
                 wickets: '1195',
                 isPro: true,
                 avatarInitial: 'P',
-                primaryColor: Color(0xFF0284C7),
-                secondaryColor: Color(0xFF0369A1),
+                primaryColor: AppColors.jerseyRoyalBlue,
+                secondaryColor: AppColors.jerseyDarkBlue,
               ),
               SizedBox(width: 14),
               _CricketerFollowCard(
@@ -64,8 +64,8 @@ class CricketerCardSection extends StatelessWidget {
                 wickets: '2815',
                 isPro: true,
                 avatarInitial: 'M',
-                primaryColor: Color(0xFF059669),
-                secondaryColor: Color(0xFF047857),
+                primaryColor: AppColors.grassGreen,
+                secondaryColor: AppColors.grassGreen,
               ),
               SizedBox(width: 14),
               _CricketerFollowCard(
@@ -74,8 +74,8 @@ class CricketerCardSection extends StatelessWidget {
                 wickets: '942',
                 isPro: false,
                 avatarInitial: 'A',
-                primaryColor: Color(0xFFDC2626),
-                secondaryColor: Color(0xFFB91C1C),
+                primaryColor: AppColors.brandRed,
+                secondaryColor: AppColors.brandRedDark,
               ),
             ],
           ),
@@ -241,8 +241,8 @@ class _CricketerFollowCardState extends State<_CricketerFollowCard> {
                   setState(() => _isFollowing = !_isFollowing);
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: _isFollowing ? AppColors.surfaceLight : const Color(0xFF00E5FF),
-                  foregroundColor: _isFollowing ? AppColors.textDark : const Color(0xFF0F172A),
+                  backgroundColor: _isFollowing ? AppColors.surfaceLight : AppColors.followCyan,
+                  foregroundColor: _isFollowing ? AppColors.textDark : AppColors.grey900,
                   elevation: 0,
                   padding: EdgeInsets.zero,
                   shape: RoundedRectangleBorder(

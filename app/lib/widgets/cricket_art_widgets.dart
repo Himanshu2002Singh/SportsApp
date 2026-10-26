@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../core/constants/app_colors.dart';
 
 /// Custom-drawn authentic vector illustrations for CricHeroes screens
 /// 1. Helmet Batsman Illustration (Page 6 / Image 1)
@@ -17,7 +18,7 @@ class CricketHelmetCard extends StatelessWidget {
         width: size,
         height: size,
         decoration: BoxDecoration(
-          color: const Color(0xFF25333D),
+          color: AppColors.navyMedium,
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
@@ -48,13 +49,13 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // 1. Dark circular shadow backdrop
     final circlePaint = Paint()
-      ..color = const Color(0xFF1B262E)
+      ..color = AppColors.navyDark
       ..style = PaintingStyle.fill;
     canvas.drawCircle(center, w * 0.44, circlePaint);
 
     // 2. Grey Shoulders / Jersey
     final shoulderPaint = Paint()
-      ..color = const Color(0xFF909EA9)
+      ..color = AppColors.grey400
       ..style = PaintingStyle.fill;
     final shoulderPath = Path();
     shoulderPath.moveTo(w * 0.08, h);
@@ -81,7 +82,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // 4. Red Shirt Collar Tabs (underside collar)
     final redCollarPaint = Paint()
-      ..color = const Color(0xFFB71C1C)
+      ..color = AppColors.brandRedDark
       ..style = PaintingStyle.fill;
 
     // Left red collar
@@ -102,7 +103,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // 5. Faceless Cream/Beige Skin
     final facePaint = Paint()
-      ..color = const Color(0xFFFBE6CA)
+      ..color = AppColors.khakhi50
       ..style = PaintingStyle.fill;
     final facePath = Path();
     facePath.addRRect(RRect.fromRectAndRadius(
@@ -113,7 +114,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // 6. Chinstrap
     final strapPaint = Paint()
-      ..color = const Color(0xFF1E2830)
+      ..color = AppColors.navyDark
       ..style = PaintingStyle.stroke
       ..strokeWidth = w * 0.02
       ..strokeCap = StrokeCap.round;
@@ -124,7 +125,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // Chin cup
     final chinCupPaint = Paint()
-      ..color = const Color(0xFF1E2830)
+      ..color = AppColors.navyDark
       ..style = PaintingStyle.fill;
     canvas.drawOval(
       Rect.fromCenter(center: Offset(w * 0.50, h * 0.495), width: w * 0.08, height: h * 0.03),
@@ -133,7 +134,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // 7. Red Helmet Dome
     final helmetPaint = Paint()
-      ..color = const Color(0xFFD32F2F)
+      ..color = AppColors.brandRed
       ..style = PaintingStyle.fill;
     final helmetPath = Path();
     helmetPath.moveTo(w * 0.28, h * 0.34);
@@ -145,7 +146,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // Helmet Peak / Visor rim
     final peakPaint = Paint()
-      ..color = const Color(0xFFB71C1C)
+      ..color = AppColors.brandRedDark
       ..style = PaintingStyle.fill;
     final peakPath = Path();
     peakPath.moveTo(w * 0.26, h * 0.35);
@@ -156,7 +157,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // 8. Slate Grey Ear Guards
     final earGuardPaint = Paint()
-      ..color = const Color(0xFF788896)
+      ..color = AppColors.grey500
       ..style = PaintingStyle.fill;
 
     // Left ear guard
@@ -179,7 +180,7 @@ class _HelmetBatsmanPainter extends CustomPainter {
 
     // 9. Metal Face Grill Wireframe (Visor Grill)
     final grillPaint = Paint()
-      ..color = const Color(0xFF37474F)
+      ..color = AppColors.charcoalDark
       ..style = PaintingStyle.stroke
       ..strokeWidth = w * 0.015
       ..strokeCap = StrokeCap.round;
@@ -225,7 +226,7 @@ class CricketerAvatarWidget extends StatelessWidget {
       width: size,
       height: size,
       decoration: const BoxDecoration(
-        color: Color(0xFF1E2830),
+        color: AppColors.navyDark,
         shape: BoxShape.circle,
       ),
       child: ClipOval(
@@ -258,9 +259,9 @@ class _CricketerFacePainter extends CustomPainter {
     canvas.drawPath(shirtPath, shirtPaint);
 
     // 2. Tricolor stripe on Left collar
-    final saffronPaint = Paint()..color = const Color(0xFFFF9933);
+    final saffronPaint = Paint()..color = AppColors.amberBanner;
     final whiteStripePaint = Paint()..color = Colors.white;
-    final greenPaint = Paint()..color = const Color(0xFF138808);
+    final greenPaint = Paint()..color = AppColors.grassGreen;
 
     final stripeX = w * 0.54;
     final stripeY = h * 0.67;
@@ -272,7 +273,7 @@ class _CricketerFacePainter extends CustomPainter {
     canvas.drawRect(Rect.fromLTWH(stripeX, stripeY + stripeH * 2, stripeW, stripeH), greenPaint);
 
     // 3. Red Cricket Ball Logo Badge on chest
-    final redBallPaint = Paint()..color = const Color(0xFFD32F2F);
+    final redBallPaint = Paint()..color = AppColors.brandRed;
     final seamPaint = Paint()
       ..color = Colors.white
       ..style = PaintingStyle.stroke
@@ -290,7 +291,7 @@ class _CricketerFacePainter extends CustomPainter {
 
     // 4. Neck
     final skinPaint = Paint()
-      ..color = const Color(0xFFDE9E74)
+      ..color = AppColors.khakhi50
       ..style = PaintingStyle.fill;
     final neckPath = Path();
     neckPath.moveTo(w * 0.42, h * 0.55);
@@ -322,7 +323,7 @@ class _CricketerFacePainter extends CustomPainter {
 
     // 7. Facial Features (Eyebrows, Eyes, Nose, Mouth)
     final featurePaint = Paint()
-      ..color = const Color(0xFF1E1E24)
+      ..color = AppColors.grey900
       ..style = PaintingStyle.fill;
 
     // Eyebrows
@@ -359,7 +360,7 @@ class _CricketerFacePainter extends CustomPainter {
 
     // Nose
     final nosePaint = Paint()
-      ..color = const Color(0xFFC7845C)
+      ..color = AppColors.khakhi50
       ..style = PaintingStyle.stroke
       ..strokeWidth = w * 0.01
       ..strokeCap = StrokeCap.round;
@@ -371,7 +372,7 @@ class _CricketerFacePainter extends CustomPainter {
 
     // Lips
     final lipPaint = Paint()
-      ..color = const Color(0xFF9E5C4E)
+      ..color = AppColors.khakhi50
       ..style = PaintingStyle.fill;
     final lipPath = Path();
     lipPath.moveTo(w * 0.46, h * 0.56);
@@ -382,7 +383,7 @@ class _CricketerFacePainter extends CustomPainter {
 
     // 8. Modern Spiked Haircut (Black with texture)
     final hairPaint = Paint()
-      ..color = const Color(0xFF18181B)
+      ..color = AppColors.grey900
       ..style = PaintingStyle.fill;
     final hairPath = Path();
     hairPath.moveTo(w * 0.36, h * 0.43);

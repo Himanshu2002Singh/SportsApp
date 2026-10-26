@@ -50,8 +50,8 @@ class StoreScreen extends StatelessWidget {
               // Yellow Custom Jersey Card
               Expanded(
                 child: _JerseyCard(
-                  jerseyColor: const Color(0xFFFACC15),
-                  collarColor: const Color(0xFF1D4ED8),
+                  jerseyColor: AppColors.jerseyYellow,
+                  collarColor: AppColors.jerseyRoyalBlue,
                   playerName: 'HIMANSHU SIN',
                   playerNumber: '98',
                   onGetNow: () {
@@ -65,8 +65,8 @@ class StoreScreen extends StatelessWidget {
               // Blue Custom Jersey Card
               Expanded(
                 child: _JerseyCard(
-                  jerseyColor: const Color(0xFF1E40AF),
-                  collarColor: const Color(0xFF1E3A8A),
+                  jerseyColor: AppColors.jerseyBlue,
+                  collarColor: AppColors.jerseyDarkBlue,
                   playerName: 'HIMANSHU SIN',
                   playerNumber: '98',
                   onGetNow: () {
@@ -136,7 +136,7 @@ class _JerseyCard extends StatelessWidget {
         Container(
           height: 200,
           decoration: BoxDecoration(
-            color: const Color(0xFFF9FAFB),
+            color: AppColors.grey50,
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: AppColors.divider),
           ),
@@ -183,8 +183,8 @@ class _JerseyCard extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 9,
                             fontWeight: FontWeight.w800,
-                            color: jerseyColor == const Color(0xFFFACC15)
-                                ? const Color(0xFF1E3A8A)
+                            color: jerseyColor == AppColors.jerseyYellow
+                                ? AppColors.jerseyDarkBlue
                                 : Colors.white,
                           ),
                         ),
@@ -194,8 +194,8 @@ class _JerseyCard extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 36,
                             fontWeight: FontWeight.w900,
-                            color: jerseyColor == const Color(0xFFFACC15)
-                                ? const Color(0xFF1E3A8A)
+                            color: jerseyColor == AppColors.jerseyYellow
+                                ? AppColors.jerseyDarkBlue
                                 : Colors.white,
                           ),
                         ),

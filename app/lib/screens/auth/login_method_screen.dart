@@ -24,7 +24,7 @@ class LoginMethodScreen extends StatelessWidget {
                 height: 320,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: const Color(0xFFF3F4F6).withValues(alpha: 0.7),
+                  color: AppColors.grey100.withValues(alpha: 0.7),
                 ),
               ),
             ),
@@ -36,7 +36,7 @@ class LoginMethodScreen extends StatelessWidget {
                 height: 360,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: const Color(0xFFF3F4F6).withValues(alpha: 0.5),
+                  color: AppColors.grey100.withValues(alpha: 0.5),
                 ),
               ),
             ),

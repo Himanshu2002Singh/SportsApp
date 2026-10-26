@@ -146,7 +146,7 @@ class _AddRoundsScreenState extends State<AddRoundsScreen> {
       onTap: onTap,
       child: Container(
         height: 48,
-        color: const Color(0xFF2C2C2C), // Dark charcoal header matching Screenshot 2 & 3
+        color: AppColors.charcoalHeader, // Dark charcoal header matching Screenshot 2 & 3
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Row(
           children: [
@@ -177,7 +177,7 @@ class _AddRoundsScreenState extends State<AddRoundsScreen> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(4),
-        border: Border.all(color: const Color(0xFFE5E7EB)),
+        border: Border.all(color: AppColors.grey200),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.015),
@@ -202,12 +202,12 @@ class _AddRoundsScreenState extends State<AddRoundsScreen> {
           height: 20,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(color: const Color(0xFFCBD5E1), width: 1.5),
+            border: Border.all(color: AppColors.grey300, width: 1.5),
           ),
           child: const Icon(
             Icons.check,
             size: 13,
-            color: Color(0xFF94A3B8),
+            color: AppColors.grey400,
           ),
         ),
         onTap: () => _selectRound(title),

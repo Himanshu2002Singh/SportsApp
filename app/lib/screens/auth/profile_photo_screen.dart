@@ -54,7 +54,7 @@ class ProfilePhotoScreen extends StatelessWidget {
                 width: 260,
                 height: 260,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF3F4F6).withValues(alpha: 0.6),
+                  color: AppColors.grey100.withValues(alpha: 0.6),
                   borderRadius: BorderRadius.circular(130),
                 ),
               ),
@@ -66,7 +66,7 @@ class ProfilePhotoScreen extends StatelessWidget {
                 width: 220,
                 height: 220,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF3F4F6).withValues(alpha: 0.6),
+                  color: AppColors.grey100.withValues(alpha: 0.6),
                   borderRadius: BorderRadius.circular(110),
                 ),
               ),

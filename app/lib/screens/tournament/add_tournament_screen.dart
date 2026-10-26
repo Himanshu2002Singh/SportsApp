@@ -135,14 +135,14 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                         width: 72,
                         height: 52,
                         decoration: BoxDecoration(
-                          color: const Color(0xFFF3F4F6),
+                          color: AppColors.grey100,
                           borderRadius: BorderRadius.circular(6),
-                          border: Border.all(color: const Color(0xFFE5E7EB)),
+                          border: Border.all(color: AppColors.grey200),
                         ),
                         child: const Icon(
                           Icons.image_outlined,
                           size: 36,
-                          color: Color(0xFF9CA3AF),
+                          color: AppColors.grey400,
                         ),
                       ),
                       Positioned(
@@ -151,7 +151,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                         child: Container(
                           padding: const EdgeInsets.all(4),
                           decoration: const BoxDecoration(
-                            color: Color(0xFFD32F2F),
+                            color: AppColors.brandRed,
                             shape: BoxShape.circle,
                           ),
                           child: const Icon(Icons.camera_alt, size: 12, color: Colors.white),
@@ -181,13 +181,13 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                         height: 58,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: const Color(0xFFF9FAFB),
-                          border: Border.all(color: const Color(0xFFE5E7EB)),
+                          color: AppColors.grey50,
+                          border: Border.all(color: AppColors.grey200),
                         ),
                         child: const Icon(
                           Icons.sports_cricket_outlined,
                           size: 30,
-                          color: Color(0xFF9CA3AF),
+                          color: AppColors.grey400,
                         ),
                       ),
                       Positioned(
@@ -196,7 +196,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                         child: Container(
                           padding: const EdgeInsets.all(4),
                           decoration: const BoxDecoration(
-                            color: Color(0xFFD32F2F),
+                            color: AppColors.brandRed,
                             shape: BoxShape.circle,
                           ),
                           child: const Icon(Icons.camera_alt, size: 12, color: Colors.white),
@@ -337,10 +337,10 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
                     decoration: BoxDecoration(
-                      color: isSelected ? const Color(0xFFE2E8F0) : const Color(0xFFF1F5F9),
+                      color: isSelected ? AppColors.grey200 : AppColors.slateBg,
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
-                        color: isSelected ? const Color(0xFF94A3B8) : const Color(0xFFE2E8F0),
+                        color: isSelected ? AppColors.grey400 : AppColors.grey200,
                       ),
                     ),
                     child: Text(
@@ -380,7 +380,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
               children: [
                 _buildBallOption(
                   title: 'Tennis',
-                  color: const Color(0xFF26A69A),
+                  color: AppColors.ballTennisGreen,
                   isSelected: _selectedBallType == 'Tennis',
                   showCheckmark: true,
                   onTap: () => setState(() => _selectedBallType = 'Tennis'),
@@ -388,7 +388,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                 const SizedBox(width: 24),
                 _buildBallOption(
                   title: 'Leather',
-                  color: const Color(0xFFD32F2F),
+                  color: AppColors.ballLeatherRed,
                   isSelected: _selectedBallType == 'Leather',
                   isLeather: true,
                   onTap: () => setState(() => _selectedBallType = 'Leather'),
@@ -396,7 +396,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                 const SizedBox(width: 24),
                 _buildBallOption(
                   title: 'Other',
-                  color: const Color(0xFFFFA000),
+                  color: AppColors.ballOtherOrange,
                   isSelected: _selectedBallType == 'Other',
                   isOther: true,
                   onTap: () => setState(() => _selectedBallType = 'Other'),
@@ -427,10 +427,10 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
                     decoration: BoxDecoration(
-                      color: isSelected ? const Color(0xFFE2E8F0) : const Color(0xFFF1F5F9),
+                      color: isSelected ? AppColors.grey200 : AppColors.slateBg,
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
-                        color: isSelected ? const Color(0xFF94A3B8) : const Color(0xFFE2E8F0),
+                        color: isSelected ? AppColors.grey400 : AppColors.grey200,
                       ),
                     ),
                     child: Text(
@@ -477,10 +477,10 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
                     decoration: BoxDecoration(
-                      color: isSelected ? const Color(0xFFE2E8F0) : const Color(0xFFF1F5F9),
+                      color: isSelected ? AppColors.grey200 : AppColors.slateBg,
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
-                        color: isSelected ? const Color(0xFF94A3B8) : const Color(0xFFE2E8F0),
+                        color: isSelected ? AppColors.grey400 : AppColors.grey200,
                       ),
                     ),
                     child: Text(
@@ -574,7 +574,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
             hintStyle: const TextStyle(color: AppColors.textLight, fontWeight: FontWeight.normal),
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
-                color: isFocusedStyle ? AppColors.primaryTeal : const Color(0xFFD1D5DB),
+                color: isFocusedStyle ? AppColors.primaryTeal : AppColors.grey300,
                 width: isFocusedStyle ? 2.0 : 1.0,
               ),
             ),
@@ -595,7 +595,7 @@ class _AddTournamentScreenState extends State<AddTournamentScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 8),
         decoration: const BoxDecoration(
-          border: Border(bottom: BorderSide(color: Color(0xFFD1D5DB))),
+          border: Border(bottom: BorderSide(color: AppColors.grey300)),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

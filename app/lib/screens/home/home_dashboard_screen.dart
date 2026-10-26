@@ -56,7 +56,7 @@ class _HomeDashboardScreenState extends State<HomeDashboardScreen> {
                   child: const Center(
                     child: Icon(
                       Icons.sports_cricket,
-                      color: Color(0xFFE5202C),
+                      color: AppColors.headerRed,
                       size: 16,
                     ),
                   ),
@@ -326,7 +326,7 @@ class _HomeDashboardScreenState extends State<HomeDashboardScreen> {
             decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: const Color(0xFF27272A)),
+              border: Border.all(color: AppColors.charcoalDark),
             ),
             child: Column(
               children: [

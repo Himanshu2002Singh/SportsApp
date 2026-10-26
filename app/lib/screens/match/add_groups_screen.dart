@@ -134,7 +134,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                   'Select round',
                   style: TextStyle(
                     fontSize: 12,
-                    color: Color(0xFF9CA3AF),
+                    color: AppColors.grey400,
                   ),
                 ),
                 TextField(
@@ -148,7 +148,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                     isDense: true,
                     contentPadding: EdgeInsets.symmetric(vertical: 8),
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFFD1D5DB)),
+                      borderSide: BorderSide(color: AppColors.grey300),
                     ),
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: AppColors.primaryTeal, width: 2),
@@ -168,7 +168,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                   'Group name(e. G. Group a or group stage)',
                   style: TextStyle(
                     fontSize: 12,
-                    color: Color(0xFF00897B),
+                    color: AppColors.primaryTeal,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -183,10 +183,10 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                     isDense: true,
                     contentPadding: EdgeInsets.symmetric(vertical: 8),
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFF00897B), width: 2),
+                      borderSide: BorderSide(color: AppColors.primaryTeal, width: 2),
                     ),
                     focusedBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFF00897B), width: 2),
+                      borderSide: BorderSide(color: AppColors.primaryTeal, width: 2),
                     ),
                   ),
                 ),
@@ -200,7 +200,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
               'Select teams',
               style: TextStyle(
                 fontSize: 14,
-                color: Color(0xFF6B7280),
+                color: AppColors.grey500,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -218,7 +218,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                     height: 130,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
-                      border: Border.all(color: const Color(0xFFE5E7EB)),
+                      border: Border.all(color: AppColors.grey200),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withValues(alpha: 0.03),
@@ -234,7 +234,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                           child: Container(
                             width: double.infinity,
                             decoration: const BoxDecoration(
-                              color: Color(0xFF263238), // Dark slate/charcoal matching Screenshot 5
+                              color: AppColors.charcoalDark, // Dark slate/charcoal matching Screenshot 5
                               borderRadius: BorderRadius.vertical(top: Radius.circular(3)),
                             ),
                             child: const Center(
@@ -251,7 +251,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                           width: double.infinity,
                           height: 38,
                           decoration: const BoxDecoration(
-                            color: Color(0xFFF1F5F9),
+                            color: AppColors.grey100,
                             borderRadius: BorderRadius.vertical(bottom: Radius.circular(3)),
                           ),
                           child: const Center(
@@ -260,7 +260,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                               style: TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.w600,
-                                color: Color(0xFF374151),
+                                color: AppColors.grey700,
                               ),
                             ),
                           ),
@@ -286,7 +286,7 @@ class _AddGroupsScreenState extends State<AddGroupsScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const CircleAvatar(
-                            backgroundColor: Color(0xFFE0F2F1),
+                            backgroundColor: AppColors.primaryTealBg,
                             child: Icon(Icons.sports_cricket, color: AppColors.primaryTeal),
                           ),
                           const SizedBox(height: 8),

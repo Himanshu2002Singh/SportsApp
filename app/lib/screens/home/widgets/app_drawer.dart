@@ -76,7 +76,7 @@ class AppDrawer extends StatelessWidget {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                 decoration: BoxDecoration(
-                                  color: const Color(0xFF33383F),
+                                  color: AppColors.charcoalDark,
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(
                                     color: Colors.white.withValues(alpha: 0.25),
@@ -136,7 +136,7 @@ class AppDrawer extends StatelessWidget {
                           child: Container(
                             height: 3.5,
                             decoration: BoxDecoration(
-                              color: const Color(0xFF4B5563),
+                              color: AppColors.grey600,
                               borderRadius: BorderRadius.circular(2),
                             ),
                           ),
@@ -365,7 +365,7 @@ class _FreeBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
       decoration: BoxDecoration(
-        color: const Color(0xFF374151),
+        color: AppColors.grey700,
         borderRadius: BorderRadius.circular(12),
       ),
       child: const Text(

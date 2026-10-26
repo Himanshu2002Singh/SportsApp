@@ -93,7 +93,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             child: Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
                               decoration: BoxDecoration(
-                                color: const Color(0xFF1F2937),
+                                color: AppColors.grey800,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Row(
@@ -144,7 +144,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                                 decoration: BoxDecoration(
-                                  color: const Color(0xFF00897B),
+                                  color: AppColors.primaryTealAccent,
                                   borderRadius: BorderRadius.circular(4),
                                 ),
                                 child: Row(
@@ -171,7 +171,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           // City with Teal Pin
                           Row(
                             children: [
-                              const Icon(Icons.location_on_outlined, size: 16, color: Color(0xFF00897B)),
+                              const Icon(Icons.location_on_outlined, size: 16, color: AppColors.primaryTealAccent),
                               const SizedBox(width: 4),
                               Text(
                                 user.city.isNotEmpty ? user.city : 'Noida',
@@ -188,7 +188,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           // Join Date with Teal Calendar
                           Row(
                             children: const [
-                              Icon(Icons.calendar_month_outlined, size: 16, color: Color(0xFF00897B)),
+                              Icon(Icons.calendar_month_outlined, size: 16, color: AppColors.primaryTealAccent),
                               SizedBox(width: 4),
                               Text(
                                 'Since 21-Oct-2026',
@@ -206,7 +206,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
 
-              const SizedBox(height: 10),
+              const SizedBox(height: 16),
 
               // 2. Stats Row: Your QR code | Followers | Profile views (Image 1)
               Padding(
@@ -215,8 +215,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   decoration: const BoxDecoration(
                     border: Border(
-                      top: BorderSide(color: Color(0xFFE5E7EB)),
-                      bottom: BorderSide(color: Color(0xFFE5E7EB)),
+                      top: BorderSide(color: AppColors.grey200),
+                      bottom: BorderSide(color: AppColors.grey200),
                     ),
                   ),
                   child: Row(
@@ -225,7 +225,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Expanded(
                         child: Column(
                           children: const [
-                            Icon(Icons.qr_code_2_rounded, size: 24, color: Color(0xFF00897B)),
+                            Icon(Icons.qr_code_2_rounded, size: 24, color: AppColors.primaryTealAccent),
                             SizedBox(height: 4),
                             Text(
                               'Your QR code',
@@ -235,7 +235,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ),
                       ),
 
-                      Container(width: 1, height: 32, color: const Color(0xFFE5E7EB)),
+                      Container(width: 1, height: 32, color: AppColors.grey200),
 
                       // Followers
                       Expanded(
@@ -246,7 +246,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-                                color: Color(0xFF00897B),
+                                color: AppColors.primaryTealAccent,
                               ),
                             ),
                             SizedBox(height: 2),
@@ -258,7 +258,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ),
                       ),
 
-                      Container(width: 1, height: 32, color: const Color(0xFFE5E7EB)),
+                      Container(width: 1, height: 32, color: AppColors.grey200),
 
                       // Profile views
                       Expanded(
@@ -269,7 +269,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-                                color: Color(0xFF00897B),
+                                color: AppColors.primaryTealAccent,
                               ),
                             ),
                             SizedBox(height: 2),
@@ -297,11 +297,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 margin: const EdgeInsets.symmetric(horizontal: 16.0),
                 padding: const EdgeInsets.all(18),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00897B),
+                  color: AppColors.primaryTealAccent,
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF00897B).withValues(alpha: 0.25),
+                      color: AppColors.primaryTealAccent.withValues(alpha: 0.25),
                       blurRadius: 8,
                       offset: const Offset(0, 3),
                     ),
@@ -369,7 +369,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        foregroundColor: const Color(0xFF006D5B),
+                        foregroundColor: AppColors.primaryTeal,
                         elevation: 0,
                         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
@@ -411,7 +411,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xFF00897B),
+                          color: AppColors.primaryTealAccent,
                         ),
                       ),
                     ),
@@ -512,7 +512,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           child: Container(
                             height: 6,
                             decoration: BoxDecoration(
-                              color: const Color(0xFFE5E7EB),
+                              color: AppColors.grey200,
                               borderRadius: BorderRadius.circular(3),
                             ),
                           ),
@@ -537,7 +537,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xFF00897B),
+                          color: AppColors.primaryTealAccent,
                         ),
                       ),
                     ),
@@ -546,7 +546,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
 
               const SizedBox(height: 28),
-              const Divider(color: Color(0xFFE5E7EB), thickness: 1),
+              const Divider(color: AppColors.grey200, thickness: 1),
 
               // 6. Connections Section (Image 3)
               Padding(
@@ -566,11 +566,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
-                        _ConnectionAvatar(initial: 'A', color: Color(0xFF1E3A8A)),
-                        _ConnectionAvatar(initial: 'R', color: Color(0xFFDC2626)),
-                        _ConnectionAvatar(initial: 'S', color: Color(0xFF047857)),
-                        _ConnectionAvatar(initial: 'K', color: Color(0xFF6B21A8)),
-                        _ConnectionAvatar(initial: 'M', color: Color(0xFFD97706)),
+                        _ConnectionAvatar(initial: 'A', color: AppColors.jerseyDarkBlue),
+                        _ConnectionAvatar(initial: 'R', color: AppColors.brandRed),
+                        _ConnectionAvatar(initial: 'S', color: AppColors.grassGreen),
+                        _ConnectionAvatar(initial: 'K', color: AppColors.purpleAvatar),
+                        _ConnectionAvatar(initial: 'M', color: AppColors.amberBannerDark),
                       ],
                     ),
                     const SizedBox(height: 14),
@@ -590,7 +590,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFF00897B),
+                            color: AppColors.primaryTealAccent,
                           ),
                         ),
                       ),
@@ -599,24 +599,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
 
-              const Divider(color: Color(0xFFE5E7EB), thickness: 1),
+              const Divider(color: AppColors.grey200, thickness: 1),
 
               // 7. Settings List Tiles (Image 3)
               _SettingsTile(
                 title: 'Edit notification preferences',
                 onTap: () {},
               ),
-              const Divider(height: 1, indent: 16, color: Color(0xFFE5E7EB)),
+              const Divider(height: 1, indent: 16, color: AppColors.grey200),
               _SettingsTile(
                 title: 'Change language',
                 onTap: () {},
               ),
-              const Divider(height: 1, indent: 16, color: Color(0xFFE5E7EB)),
+              const Divider(height: 1, indent: 16, color: AppColors.grey200),
               _SettingsTile(
                 title: 'Purchase history',
                 onTap: () {},
               ),
-              const Divider(height: 1, color: Color(0xFFE5E7EB)),
+              const Divider(height: 1, color: AppColors.grey200),
 
               const SizedBox(height: 28),
 
@@ -633,13 +633,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       );
                     },
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(color: Color(0xFF1F2937), width: 1.2),
+                      side: const BorderSide(color: AppColors.grey800, width: 1.2),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                       padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 10),
                     ),
                     child: const Text(
                       'Logout',
-                      style: TextStyle(color: Color(0xFF1F2937), fontWeight: FontWeight.w600),
+                      style: TextStyle(color: AppColors.grey800, fontWeight: FontWeight.w600),
                     ),
                   ),
                   const SizedBox(width: 14),
@@ -650,13 +650,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       );
                     },
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(color: Color(0xFF1F2937), width: 1.2),
+                      side: const BorderSide(color: AppColors.grey800, width: 1.2),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
                     ),
                     child: const Text(
                       'Clear data',
-                      style: TextStyle(color: Color(0xFF1F2937), fontWeight: FontWeight.w600),
+                      style: TextStyle(color: AppColors.grey800, fontWeight: FontWeight.w600),
                     ),
                   ),
                 ],
@@ -669,7 +669,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   onPressed: () {},
                   child: const Text(
                     'Delete Account',
-                    style: TextStyle(fontSize: 13, color: Color(0xFF6B7280)),
+                    style: TextStyle(fontSize: 13, color: AppColors.grey500),
                   ),
                 ),
               ),
@@ -680,7 +680,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               const Center(
                 child: Text(
                   'Version 26.8.3 (494)',
-                  style: TextStyle(fontSize: 12, color: Color(0xFF9CA3AF)),
+                  style: TextStyle(fontSize: 12, color: AppColors.grey400),
                 ),
               ),
 
@@ -690,16 +690,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.symmetric(vertical: 12),
-                color: const Color(0xFFE0F7FA), // Light cyan
+                color: AppColors.primaryTealBg,
                 child: Center(
                   child: RichText(
                     text: const TextSpan(
                       text: 'To keep your stats safe, add your ',
-                      style: TextStyle(fontSize: 13, color: Color(0xFF1F2937)),
+                      style: TextStyle(fontSize: 13, color: AppColors.grey800),
                       children: [
                         TextSpan(
                           text: 'Email',
-                          style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xFF111827)),
+                          style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.grey900),
                         ),
                         TextSpan(text: ' now.'),
                       ],
@@ -728,7 +728,7 @@ class _ProfileFieldItem extends StatelessWidget {
       children: [
         Text(
           label,
-          style: const TextStyle(fontSize: 12, color: Color(0xFF6B7280)),
+          style: const TextStyle(fontSize: 12, color: AppColors.grey500),
         ),
         const SizedBox(height: 3),
         Text(
@@ -736,7 +736,7 @@ class _ProfileFieldItem extends StatelessWidget {
           style: const TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.w600,
-            color: Color(0xFF111827),
+            color: AppColors.grey900,
           ),
         ),
       ],
@@ -804,7 +804,7 @@ class _SettingsTile extends StatelessWidget {
         style: const TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w500,
-          color: Color(0xFF1F2937),
+          color: AppColors.grey800,
         ),
       ),
       trailing: Container(
@@ -812,9 +812,9 @@ class _SettingsTile extends StatelessWidget {
         height: 22,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          border: Border.all(color: const Color(0xFF9CA3AF), width: 1.0),
+          border: Border.all(color: AppColors.grey400, width: 1.0),
         ),
-        child: const Icon(Icons.chevron_right, size: 16, color: Color(0xFF6B7280)),
+        child: const Icon(Icons.chevron_right, size: 16, color: AppColors.grey500),
       ),
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
       dense: true,

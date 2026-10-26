@@ -76,7 +76,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                     width: 44,
                     height: 4,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFD1D5DB),
+                      color: AppColors.grey300,
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
@@ -91,7 +91,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xFFE5202C), // Red title matching Screenshot 4
+                      color: AppColors.headerRed, // Red title matching Screenshot 4
                     ),
                   ),
                 ),
@@ -104,7 +104,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                     'To generate points table, you\'ll need to add groups. Do you want to add groups now?',
                     style: TextStyle(
                       fontSize: 14,
-                      color: Color(0xFF4B5563),
+                      color: AppColors.grey600,
                       height: 1.35,
                     ),
                   ),
@@ -122,14 +122,14 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                           onTap: () => Navigator.pop(ctx),
                           child: Container(
                             height: double.infinity,
-                            color: const Color(0xFFF1F5F9),
+                            color: AppColors.grey100,
                             child: const Center(
                               child: Text(
                                 'Cancel',
                                 style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w600,
-                                  color: Color(0xFF6B7280),
+                                  color: AppColors.grey500,
                                 ),
                               ),
                             ),
@@ -153,7 +153,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                           },
                           child: Container(
                             height: double.infinity,
-                            color: const Color(0xFF00897B),
+                            color: AppColors.primaryTeal,
                             child: const Center(
                               child: Text(
                                 'Yes, I\'m sure',
@@ -241,7 +241,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
               style: TextStyle(
                 fontSize: 13,
                 fontStyle: FontStyle.italic,
-                color: Color(0xFF4B5563),
+                color: AppColors.grey600,
               ),
             ),
 
@@ -310,9 +310,9 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                 height: 56,
                 padding: const EdgeInsets.symmetric(horizontal: 12),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF9FAFB),
+                  color: AppColors.grey50,
                   borderRadius: BorderRadius.circular(4),
-                  border: Border.all(color: const Color(0xFF00897B), width: 1.5),
+                  border: Border.all(color: AppColors.primaryTeal, width: 1.5),
                 ),
                 child: Row(
                   children: [
@@ -322,7 +322,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                       height: 38,
                       decoration: const BoxDecoration(
                         gradient: LinearGradient(
-                          colors: [Color(0xFF00897B), Color(0xFF004D40)],
+                          colors: [AppColors.primaryTeal, AppColors.primaryTealDark],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                         ),
@@ -375,9 +375,9 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                         width: 110,
                         height: 95,
                         decoration: BoxDecoration(
-                          color: const Color(0xFFE5E7EB), // Light grey tile
+                          color: AppColors.grey200, // Light grey tile
                           borderRadius: BorderRadius.circular(4),
-                          border: Border.all(color: const Color(0xFFD1D5DB)),
+                          border: Border.all(color: AppColors.grey300),
                         ),
                         child: Center(
                           child: Text(
@@ -386,7 +386,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                             style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
-                              color: Color(0xFF374151),
+                              color: AppColors.grey700,
                             ),
                           ),
                         ),
@@ -403,7 +403,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                       width: 110,
                       height: 95,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF2C2C2C), // Dark charcoal matching Screenshot 1 & 4
+                        color: AppColors.charcoalHeader, // Dark charcoal matching Screenshot 1 & 4
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: const Center(
@@ -431,7 +431,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
                 style: TextStyle(
                   fontSize: 12,
                   fontStyle: FontStyle.italic,
-                  color: Color(0xFF9CA3AF),
+                  color: AppColors.grey400,
                 ),
               ),
             ],
@@ -446,14 +446,14 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           decoration: const BoxDecoration(
             color: Colors.white,
-            border: Border(top: BorderSide(color: Color(0xFFE5E7EB))),
+            border: Border(top: BorderSide(color: AppColors.grey200)),
           ),
           child: SizedBox(
             height: 48,
             child: ElevatedButton(
               onPressed: _onNext,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00897B),
+                backgroundColor: AppColors.primaryTeal,
                 elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
@@ -490,10 +490,10 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
       child: Container(
         height: 135,
         decoration: BoxDecoration(
-          color: const Color(0xFFF9FAFB),
+          color: AppColors.grey50,
           borderRadius: BorderRadius.circular(4),
           border: Border.all(
-            color: isSelected ? const Color(0xFF00897B) : const Color(0xFFE5E7EB),
+            color: isSelected ? AppColors.primaryTeal : AppColors.grey200,
             width: isSelected ? 2 : 1,
           ),
           boxShadow: [
@@ -514,7 +514,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: isSelected ? FontWeight.w700 : FontWeight.w600,
-                color: isSelected ? AppColors.textDark : const Color(0xFF4B5563),
+                color: isSelected ? AppColors.textDark : AppColors.grey600,
               ),
             ),
           ],
@@ -528,10 +528,10 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
       width: 58,
       height: 58,
       decoration: BoxDecoration(
-        color: isSelected ? const Color(0xFF6FA89E) : Colors.white, // Teal circle when selected
+        color: isSelected ? AppColors.primaryTeal.withValues(alpha: 0.6) : Colors.white, // Teal circle when selected
         shape: BoxShape.circle,
         border: Border.all(
-          color: isSelected ? const Color(0xFF00897B) : const Color(0xFFE5E7EB),
+          color: isSelected ? AppColors.primaryTeal : AppColors.grey200,
         ),
         boxShadow: [
           BoxShadow(
@@ -550,7 +550,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
               )
             : const Icon(
                 Icons.emoji_events_outlined,
-                color: Color(0xFF374151),
+                color: AppColors.grey700,
                 size: 28,
               ),
       ),
@@ -562,10 +562,10 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
       width: 58,
       height: 58,
       decoration: BoxDecoration(
-        color: isSelected ? const Color(0xFF6FA89E) : Colors.white,
+        color: isSelected ? AppColors.primaryTeal.withValues(alpha: 0.6) : Colors.white,
         shape: BoxShape.circle,
         border: Border.all(
-          color: isSelected ? const Color(0xFF00897B) : const Color(0xFFE5E7EB),
+          color: isSelected ? AppColors.primaryTeal : AppColors.grey200,
         ),
         boxShadow: [
           BoxShadow(
@@ -584,7 +584,7 @@ class _StartMatchScreenState extends State<StartMatchScreen> {
               )
             : const Icon(
                 Icons.account_circle_outlined,
-                color: Color(0xFF374151),
+                color: AppColors.grey700,
                 size: 30,
               ),
       ),

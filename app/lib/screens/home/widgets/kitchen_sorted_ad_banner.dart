@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../core/constants/app_colors.dart';
 
 /// Image 4 & Page 9: Kitchen Sorted Sponsored Ad Banner
 class KitchenSortedAdBanner extends StatelessWidget {
@@ -12,7 +13,7 @@ class KitchenSortedAdBanner extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: const Color(0xFFE5E7EB)),
+        border: Border.all(color: AppColors.grey200),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.03),
@@ -31,7 +32,7 @@ class KitchenSortedAdBanner extends StatelessWidget {
                 width: 42,
                 height: 42,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00A86B), // Pronto green
+                  color: AppColors.grassGreen, // Pronto green
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: const Center(
@@ -46,7 +47,7 @@ class KitchenSortedAdBanner extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 3),
-              const Icon(Icons.info_outline, size: 12, color: Color(0xFF9CA3AF)),
+              const Icon(Icons.info_outline, size: 12, color: AppColors.grey400),
             ],
           ),
 
@@ -63,7 +64,7 @@ class KitchenSortedAdBanner extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w700,
-                    color: Color(0xFF111827),
+                    color: AppColors.grey900,
                   ),
                 ),
                 SizedBox(height: 2),
@@ -73,7 +74,7 @@ class KitchenSortedAdBanner extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     fontSize: 11,
-                    color: Color(0xFF6B7280),
+                    color: AppColors.grey500,
                   ),
                 ),
               ],
@@ -113,7 +114,7 @@ class KitchenSortedAdBanner extends StatelessWidget {
                   child: const Icon(
                     Icons.arrow_forward,
                     size: 10,
-                    color: Color(0xFF4B5563),
+                    color: AppColors.grey600,
                   ),
                 ),
               ),

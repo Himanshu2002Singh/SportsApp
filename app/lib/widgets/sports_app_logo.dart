@@ -16,8 +16,8 @@ class SportsAppLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = isDarkBackground ? Colors.white : const Color(0xFF1E293B);
-    final accentColor = isDarkBackground ? const Color(0xFFFF5252) : AppColors.brandRed;
+    final textColor = isDarkBackground ? Colors.white : AppColors.grey800;
+    final accentColor = isDarkBackground ? AppColors.brandRed : AppColors.brandRed;
 
     if (isVertical) {
       final ballSize = height * 0.48;
@@ -58,13 +58,13 @@ class SportsAppLogo extends StatelessWidget {
           center: Alignment(-0.3, -0.3),
           radius: 0.85,
           colors: [
-            Color(0xFFFF3B30),
-            Color(0xFFC00A15),
+            AppColors.brandRed,
+            AppColors.brandRedDark,
           ],
         ),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFFE5202C).withValues(alpha: 0.25),
+            color: AppColors.brandRed.withValues(alpha: 0.25),
             blurRadius: size * 0.2,
             offset: Offset(0, size * 0.08),
           ),

@@ -42,11 +42,11 @@ class PersonalizedJerseysSection extends StatelessWidget {
             children: [
               // 1. Yellow Jersey Card (Image 4)
               _JerseyItemCard(
-                primaryColor: const Color(0xFFFACC15), // Yellow
-                collarColor: const Color(0xFF2563EB), // Blue
+                primaryColor: AppColors.jerseyYellow, // Yellow
+                collarColor: AppColors.jerseyRoyalBlue, // Blue
                 name: jerseyBackName,
                 number: '98',
-                textColor: const Color(0xFF1E3A8A),
+                textColor: AppColors.jerseyDarkBlue,
                 onTap: () {
                   Navigator.push(
                     context,
@@ -59,8 +59,8 @@ class PersonalizedJerseysSection extends StatelessWidget {
 
               // 2. Navy Blue Jersey Card (Image 4)
               _JerseyItemCard(
-                primaryColor: const Color(0xFF1D4ED8), // Royal Blue
-                collarColor: const Color(0xFF1E3A8A),
+                primaryColor: AppColors.jerseyRoyalBlue, // Royal Blue
+                collarColor: AppColors.jerseyDarkBlue,
                 name: jerseyBackName,
                 number: '98',
                 textColor: Colors.white,
@@ -76,8 +76,8 @@ class PersonalizedJerseysSection extends StatelessWidget {
 
               // 3. Maroon / Crimson Jersey Card
               _JerseyItemCard(
-                primaryColor: const Color(0xFF991B1B), // Crimson Maroon
-                collarColor: const Color(0xFF7F1D1D),
+                primaryColor: AppColors.brandRedDark, // Crimson Maroon
+                collarColor: AppColors.brandRedDark,
                 name: jerseyBackName,
                 number: '98',
                 textColor: Colors.white,
@@ -118,9 +118,9 @@ class _JerseyItemCard extends StatelessWidget {
     return Container(
       width: 210,
       decoration: BoxDecoration(
-        color: const Color(0xFFF9FAFB),
+        color: AppColors.grey50,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFFE5E7EB)),
+        border: Border.all(color: AppColors.grey200),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.03),
@@ -253,7 +253,7 @@ class _JerseyItemCard extends StatelessWidget {
             ),
           ),
 
-          const Divider(height: 1, color: Color(0xFFE5E7EB)),
+          const Divider(height: 1, color: AppColors.grey200),
 
           // "Get it now ➔" Button Link (Image 4)
           InkWell(

@@ -97,7 +97,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(4),
-                border: Border.all(color: const Color(0xFFE5E7EB)),
+                border: Border.all(color: AppColors.grey200),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withValues(alpha: 0.02),
@@ -117,12 +117,12 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                         width: 48,
                         height: 48,
                         decoration: const BoxDecoration(
-                          color: Color(0xFFD3EBE7),
+                          color: AppColors.tealAvatarBg,
                           shape: BoxShape.circle,
                         ),
                         child: const Icon(
                           Icons.content_copy_outlined,
-                          color: Color(0xFF00695C),
+                          color: AppColors.primaryTeal,
                           size: 22,
                         ),
                       ),
@@ -144,7 +144,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                               'Invite Captains to Add Teams.',
                               style: TextStyle(
                                 fontSize: 13,
-                                color: Color(0xFF6B7280),
+                                color: AppColors.grey500,
                               ),
                             ),
                           ],
@@ -158,7 +158,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                     style: TextStyle(
                       fontSize: 13,
                       height: 1.35,
-                      color: Color(0xFF6B7280),
+                      color: AppColors.grey500,
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -169,7 +169,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                         child: OutlinedButton(
                           onPressed: _showCopiedSnackbar,
                           style: OutlinedButton.styleFrom(
-                            side: const BorderSide(color: Color(0xFF00897B), width: 1.5),
+                            side: const BorderSide(color: AppColors.primaryTealAccent, width: 1.5),
                             padding: const EdgeInsets.symmetric(vertical: 11),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4),
@@ -181,7 +181,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF00897B),
+                              color: AppColors.primaryTealAccent,
                             ),
                           ),
                         ),
@@ -192,7 +192,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                         child: ElevatedButton(
                           onPressed: _showCopiedSnackbar,
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFF00897B),
+                            backgroundColor: AppColors.primaryTealAccent,
                             elevation: 0,
                             padding: const EdgeInsets.symmetric(vertical: 11),
                             shape: RoundedRectangleBorder(
@@ -271,7 +271,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
             // Divider: —— Help videos ——
             Row(
               children: const [
-                Expanded(child: Divider(color: Color(0xFFD1D5DB), thickness: 1)),
+                Expanded(child: Divider(color: AppColors.grey300, thickness: 1)),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 14.0),
                   child: Text(
@@ -279,11 +279,11 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xFF374151),
+                      color: AppColors.grey700,
                     ),
                   ),
                 ),
-                Expanded(child: Divider(color: Color(0xFFD1D5DB), thickness: 1)),
+                Expanded(child: Divider(color: AppColors.grey300, thickness: 1)),
               ],
             ),
 
@@ -306,14 +306,14 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       border: Border(
-                        bottom: BorderSide(color: Color(0xFFD1D5DB), width: 1),
+                        bottom: BorderSide(color: AppColors.grey300, width: 1),
                       ),
                     ),
                     child: DropdownButtonHideUnderline(
                       child: DropdownButton<String>(
                         value: _selectedLanguage,
                         isExpanded: true,
-                        icon: const Icon(Icons.arrow_drop_down, color: Color(0xFF9CA3AF)),
+                        icon: const Icon(Icons.arrow_drop_down, color: AppColors.grey400),
                         items: _languages.map((lang) {
                           return DropdownMenuItem<String>(
                             value: lang,
@@ -408,7 +408,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(4),
-          border: Border.all(color: const Color(0xFFE5E7EB)),
+          border: Border.all(color: AppColors.grey200),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: 0.02),
@@ -424,12 +424,12 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
               width: 48,
               height: 48,
               decoration: const BoxDecoration(
-                color: Color(0xFFD3EBE7),
+                color: AppColors.tealAvatarBg,
                 shape: BoxShape.circle,
               ),
               child: Icon(
                 icon,
-                color: const Color(0xFF00695C),
+                color: AppColors.primaryTeal,
                 size: 24,
               ),
             ),
@@ -451,7 +451,7 @@ class _AddTeamsScreenState extends State<AddTeamsScreen> {
                     subtitle,
                     style: const TextStyle(
                       fontSize: 13,
-                      color: Color(0xFF6B7280),
+                      color: AppColors.grey500,
                     ),
                   ),
                 ],

@@ -26,7 +26,7 @@ class WelcomeUserScreen extends StatelessWidget {
                 width: 240,
                 height: 240,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF3F4F6).withValues(alpha: 0.6),
+                  color: AppColors.grey100.withValues(alpha: 0.6),
                   borderRadius: BorderRadius.circular(120),
                 ),
               ),
@@ -38,7 +38,7 @@ class WelcomeUserScreen extends StatelessWidget {
                 width: 300,
                 height: 300,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF3F4F6).withValues(alpha: 0.5),
+                  color: AppColors.grey100.withValues(alpha: 0.5),
                   borderRadius: BorderRadius.circular(150),
                 ),
               ),
@@ -50,7 +50,7 @@ class WelcomeUserScreen extends StatelessWidget {
                 width: 200,
                 height: 200,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF3F4F6).withValues(alpha: 0.5),
+                  color: AppColors.grey100.withValues(alpha: 0.5),
                   borderRadius: BorderRadius.circular(100),
                 ),
               ),
