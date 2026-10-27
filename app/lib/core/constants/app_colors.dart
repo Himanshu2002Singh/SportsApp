@@ -6,24 +6,30 @@ class AppColors {
   AppColors._();
 
   // ==========================================
-  // 1. BRAND & HEADER ACCENTS (Theme primary/secondary)
+  // 1. BRAND & HEADER ACCENTS (Teal & Grey Theme)
   // ==========================================
-  /// Signature Brand Crimson Red (Logo, live badges, active tabs, header red)
-  static const Color brandRed = Color(0xFFE21C28);
-  static const Color headerRed = Color(0xFFE5202C);
-  static const Color brandRedDark = Color(0xFFB4151F);
-  static const Color brandRedLight = Color(0xFFFFECEE);
-  static const Color brandRedTransparent = Color(0x33E21C28);
+  /// Signature Brand Teal (Logo, badges, active tabs, header)
+  static const Color brandTeal = Color(0xFF0D9488);        // Tailwind Teal 600
+  static const Color headerTeal = Color(0xFF0F766E);       // Tailwind Teal 700 (Commanding Header)
+  static const Color brandTealDark = Color(0xFF115E59);   // Tailwind Teal 800
+  static const Color brandTealLight = Color(0xFFCCFBF1);  // Tailwind Teal 100
+  static const Color brandTealTransparent = Color(0x330D9488);
+
+  // Mapped brand aliases so entire app switches directly to Teal & Grey
+  static const Color brandRed = brandTeal;
+  static const Color headerRed = headerTeal;
+  static const Color brandRedDark = brandTealDark;
+  static const Color brandRedLight = brandTealLight;
+  static const Color brandRedTransparent = brandTealTransparent;
 
   // ==========================================
   // 2. PRIMARY ACTION & CTA (Buttons, active icons, tabs)
   // ==========================================
-  /// Primary Action Green/Teal (Main CTA buttons, selected chips, confirm)
-  static const Color primaryTeal = Color(0xFF006D5B);
-  static const Color primaryTealDark = Color(0xFF005648);
-  static const Color primaryTealLight = Color(0xFFE6F2F0);
-  static const Color primaryTealAccent = Color(0xFF00897B);
-  static const Color primaryTealBg = Color(0xFFE0F2F1);
+  static const Color primaryTeal = Color(0xFF0D9488);
+  static const Color primaryTealDark = Color(0xFF0F766E);
+  static const Color primaryTealLight = Color(0xFFCCFBF1);
+  static const Color primaryTealAccent = Color(0xFF14B8A6); // Tailwind Teal 500
+  static const Color primaryTealBg = Color(0xFFF0FDFA);    // Tailwind Teal 50
 
   // Semantic Shortcuts for Actions
   static const Color primaryAction = primaryTeal;
@@ -32,21 +38,21 @@ class AppColors {
   static const Color primaryActionAccent = primaryTealAccent;
 
   // ==========================================
-  // 3. NEUTRAL GREYS & SURFACES (Tailwind-style scale)
+  // 3. NEUTRAL GREYS & SLATE SURFACES (Slate / Cool Grey Scale)
   // ==========================================
-  static const Color grey50 = Color(0xFFF9FAFB);  // Subtlest background / card alt
-  static const Color grey100 = Color(0xFFF3F4F6); // Pill button backgrounds / chips
-  static const Color grey200 = Color(0xFFE5E7EB); // Borders, dividers, unselected
-  static const Color grey300 = Color(0xFFD1D5DB); // Input borders, disabled text
-  static const Color grey400 = Color(0xFF9CA3AF); // Placeholder hints, icons
-  static const Color grey500 = Color(0xFF6B7280); // Secondary copy, subtitles
-  static const Color grey600 = Color(0xFF4B5563); // Notice text, medium emphasis
-  static const Color grey700 = Color(0xFF374151); // Darker body text
-  static const Color grey800 = Color(0xFF1F2937); // Section headers, deep neutral
-  static const Color grey900 = Color(0xFF111827); // Headlines, primary text
+  static const Color grey50 = Color(0xFFF8FAFC);  // Crisp slate surface / card alt
+  static const Color grey100 = Color(0xFFF1F5F9); // Pill buttons / chip backgrounds
+  static const Color grey200 = Color(0xFFE2E8F0); // Elegant dividers & borders
+  static const Color grey300 = Color(0xFFCBD5E1); // Input borders, disabled states
+  static const Color grey400 = Color(0xFF94A3B8); // Placeholder hints, subtle icons
+  static const Color grey500 = Color(0xFF64748B); // Secondary copy, timestamps
+  static const Color grey600 = Color(0xFF475569); // Notice copy, medium emphasis
+  static const Color grey700 = Color(0xFF334155); // Dark slate body text / badges
+  static const Color grey800 = Color(0xFF1E293B); // Deep slate cards / headers
+  static const Color grey900 = Color(0xFF0F172A); // Headlines, primary dark text
   static const Color slateBg = Color(0xFFF1F5F9); // Light slate chip background
-  static const Color charcoalDark = Color(0xFF263238); // Dark charcoal headers/drawers
-  static const Color charcoalHeader = Color(0xFF2C2C2C);
+  static const Color charcoalDark = Color(0xFF1E293B); // Dark charcoal / slate headers
+  static const Color charcoalHeader = Color(0xFF0F172A);
 
   // ==========================================
   // 4. BACKGROUNDS & SURFACES
@@ -54,7 +60,7 @@ class AppColors {
   static const Color scaffoldBackground = Color(0xFFFFFFFF);
   static const Color surfaceLight = grey50;
   static const Color cardBackground = Color(0xFFFFFFFF);
-  static const Color drawerHeaderDark = Color(0xFF25292E);
+  static const Color drawerHeaderDark = Color(0xFF0F766E); // Themed teal header
   static const Color cardBorder = grey200;
   static const Color divider = grey200;
   static const Color inputBorder = grey300;
@@ -71,43 +77,43 @@ class AppColors {
   // ==========================================
   // 6. ACCENTS, STATUS & SPORTS BADGES
   // ==========================================
-  static const Color liveRed = Color(0xFFE21C28);
+  static const Color liveRed = primaryTealAccent;
   static const Color proBadge = primaryTealAccent;
   static const Color proGold = Color(0xFFFFB800);
   static const Color goldRating = Color(0xFFFFB800);
-  static const Color cyanProgress = Color(0xFF38BDF8);
-  static const Color ballTennisGreen = Color(0xFF009688);
-  static const Color ballLeatherRed = Color(0xFFD32F2F);
-  static const Color ballOtherOrange = Color(0xFFFF6D00);
-  static const Color grassGreen = Color(0xFF00B050);
-  static const Color secondary = Color(0xFF18958F);
+  static const Color cyanProgress = primaryTealAccent;
+  static const Color ballTennisGreen = Color(0xFF0D9488);
+  static const Color ballLeatherRed = Color(0xFF0F766E);
+  static const Color ballOtherOrange = Color(0xFF64748B);
+  static const Color grassGreen = Color(0xFF0D9488);
+  static const Color secondary = Color(0xFF14B8A6);
   static const Color khakhi50 = Color(0xFFCB8E40);
-  static const Color tealAvatarBg = Color(0xFFD3EBE7);
+  static const Color tealAvatarBg = Color(0xFFCCFBF1);
   static const Color jerseyYellow = Color(0xFFFACC15);
-  static const Color jerseyBlue = Color(0xFF1E40AF);
-  static const Color jerseyDarkBlue = Color(0xFF1E3A8A);
-  static const Color jerseyRoyalBlue = Color(0xFF1D4ED8);
-  static const Color navyDark = Color(0xFF1E2830);
-  static const Color navyMedium = Color(0xFF25333D);
-  static const Color amberBanner = Color(0xFFF59E0B);
-  static const Color amberBannerDark = Color(0xFFD97706);
-  static const Color purpleAvatar = Color(0xFF6B21A8);
-  static const Color followCyan = Color(0xFF00E5FF);
+  static const Color jerseyBlue = Color(0xFF0D9488);
+  static const Color jerseyDarkBlue = Color(0xFF0F766E);
+  static const Color jerseyRoyalBlue = Color(0xFF115E59);
+  static const Color navyDark = Color(0xFF0F172A);
+  static const Color navyMedium = Color(0xFF1E293B);
+  static const Color amberBanner = Color(0xFF0D9488);
+  static const Color amberBannerDark = Color(0xFF0F766E);
+  static const Color purpleAvatar = Color(0xFF475569);
+  static const Color followCyan = primaryTealAccent;
 
   // ==========================================
-  // 7. WEB SHOWCASE BACKWARD COMPATIBILITY
+  // 7. BACKWARD COMPATIBILITY
   // ==========================================
-  static const Color primary = brandRed;
-  static const Color primaryDark = brandRedDark;
-  static const Color primaryLight = Color(0xFFF26472);
-  static const Color primaryTransparent = brandRedTransparent;
+  static const Color primary = brandTeal;
+  static const Color primaryDark = brandTealDark;
+  static const Color primaryLight = brandTealLight;
+  static const Color primaryTransparent = brandTealTransparent;
   static const Color background = scaffoldBackground;
-  static const Color greyscale95 = Color(0xFF0B0B0B);
-  static const Color greyscale90 = Color(0xFF191919);
-  static const Color greyscale60 = Color(0xFF666667);
-  static const Color greyscale45 = Color(0xFF8E8E93);
-  static const Color greyscale35 = Color(0xFF989898);
-  static const Color greyscale30 = Color(0xFFB2B3B3);
-  static const Color greyscale20 = Color(0xFFCCCBCB);
-  static const Color greyscale10 = Color(0xFFE6E6E5);
+  static const Color greyscale95 = Color(0xFF0F172A);
+  static const Color greyscale90 = Color(0xFF1E293B);
+  static const Color greyscale60 = Color(0xFF64748B);
+  static const Color greyscale45 = Color(0xFF94A3B8);
+  static const Color greyscale35 = Color(0xFFCBD5E1);
+  static const Color greyscale30 = Color(0xFFCBD5E1);
+  static const Color greyscale20 = Color(0xFFE2E8F0);
+  static const Color greyscale10 = Color(0xFFF1F5F9);
 }

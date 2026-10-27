@@ -10,7 +10,7 @@ class AppTypography {
   // ==========================================
   // 1. PRIMARY FONT FAMILY BUILDER
   // ==========================================
-  /// Change this function to swap the entire app's font family (e.g. inter, poppins, roboto, barlow)
+  /// Calibri / Carlito Typography Builder
   static TextStyle font({
     double? fontSize,
     FontWeight? fontWeight,
@@ -19,19 +19,21 @@ class AppTypography {
     double? letterSpacing,
     FontStyle? fontStyle,
   }) {
-    return GoogleFonts.inter(
+    return GoogleFonts.carlito(
       fontSize: fontSize,
       fontWeight: fontWeight,
       color: color,
       height: height,
       letterSpacing: letterSpacing,
       fontStyle: fontStyle,
+    ).copyWith(
+      fontFamilyFallback: const ['Calibri', 'Carlito', 'sans-serif'],
     );
   }
 
   /// App-wide TextTheme built dynamically from the central font
   static TextTheme get textTheme {
-    return GoogleFonts.interTextTheme().copyWith(
+    return GoogleFonts.carlitoTextTheme().copyWith(
       displayLarge: font(fontSize: 32, fontWeight: FontWeight.w800, color: AppColors.textDark),
       displayMedium: font(fontSize: 28, fontWeight: FontWeight.w800, color: AppColors.textDark),
       displaySmall: font(fontSize: 24, fontWeight: FontWeight.w700, color: AppColors.textDark),
